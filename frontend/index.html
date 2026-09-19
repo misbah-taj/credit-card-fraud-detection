@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Credit Card Fraud Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>💳 Credit Card Fraud Detection</h1>
+
+<p class="project-subtitle">
+    Machine Learning Based Fraud Detection System
+</p>
+
+        <p class="description">
+            Enter the transaction details below to check whether the transaction
+            is legitimate or potentially fraudulent.
+        </p>
+
+        <label>Transaction Time:</label>
+        <input type="number" id="Time" value="0">
+
+        <br><br>
+
+        <label>Transaction Amount:</label>
+        <input type="number" id="Amount" value="100">
+
+        <br><br>
+
+        <h3>Transaction Features</h3>
+        <div class="info-card">
+    🔒 Your transaction data is analyzed securely using a machine learning model.
+</div>
+<div class="how-it-works">
+
+    <h3>How It Works</h3>
+
+    <div class="steps">
+
+        <div class="step">
+            <span>1</span>
+            <p>Enter transaction details</p>
+        </div>
+
+        <div class="step">
+            <span>2</span>
+            <p>Machine learning analyzes the transaction</p>
+        </div>
+
+        <div class="step">
+            <span>3</span>
+            <p>System predicts the fraud probability</p>
+        </div>
+
+    </div>
+
+</div>
+
+        <div id="features"></div>
+
+        <button onclick="checkTransaction()">
+            Check Transaction
+        </button>
+
+        <button type="button" class="reset-btn" onclick="resetForm()">
+            Reset
+        </button>
+        <div class="statistics-section">
+
+    <h3>Transaction Statistics</h3>
+
+    <div class="statistics-container">
+
+        <div class="stat-card">
+            <span class="stat-number" id="total-transactions">0</span>
+            <span class="stat-label">Total Checked</span>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-number" id="legitimate-count">0</span>
+            <span class="stat-label">Legitimate</span>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-number" id="fraud-count">0</span>
+            <span class="stat-label">Fraudulent</span>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-number" id="average-risk">0%</span>
+            <span class="stat-label">Average Risk</span>
+        </div>
+
+    </div>
+
+</div>
+
+        <div class="history-section">
+
+    <h3>Transaction History</h3>
+
+    <div id="history-list">
+        <p class="no-history">No transactions checked yet.</p>
+    </div>
+
+    <button type="button" class="clear-history-btn">
+        Clear History
+    </button>
+
+</div>
+
+</div>
+
+    <h3>Prediction Result</h3>
+
+    <div id="result" class="result-box"></div>
+
+</div>
+
+        <div id="probability-container" class="probability-container">
+
+            <div class="probability-label">
+                <span>Fraud Probability</span>
+                <span id="probability-text">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+
+            <div id="risk-level" class="risk-level"></div>
+
+        </div>
+
+    </div>
+    <div class="project-info">
+
+    <h3>About the Project</h3>
+
+    <p>
+        This Credit Card Fraud Detection System uses machine learning
+        to analyze transaction data and identify potentially fraudulent
+        transactions.
+    </p>
+
+    <div class="project-details">
+        <div>
+            <strong>Technology</strong>
+            <span>Python & Machine Learning</span>
+        </div>
+
+        <div>
+            <strong>Backend</strong>
+            <span>Flask</span>
+        </div>
+
+        <div>
+            <strong>Frontend</strong>
+            <span>HTML, CSS & JavaScript</span>
+        </div>
+
+        <div>
+            <strong>Model</strong>
+            <span>Machine Learning Classifier</span>
+        </div>
+    </div>
+
+</div>
+<footer>
+    <p>Credit Card Fraud Detection System</p>
+    <p>Developed by Misbah Taj Khuraishi</p>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
