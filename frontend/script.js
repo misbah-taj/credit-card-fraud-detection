@@ -101,9 +101,9 @@ async function checkTransaction() {
 
         // Send data to middleware
 
-        const response = await fetch(
-            "http://localhost:3000/api/predict",
+        const response = await fetch("https://fraud-detection-middleware.onrender.com/api/predict", 
             {
+            
                 method: "POST",
 
                 headers: {
