@@ -15,7 +15,7 @@ app.post("/api/predict", async (req, res) => {
         console.log("Data received from frontend:");
         console.log(req.body);
 
-        const response = await fetch("http://127.0.0.1:5000/predict", {
+        const response = await fetch("https://credit-card-fraud-detection-1-hzi2.onrender.com/predict", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
